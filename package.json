@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@vladaviedov/gh-lang-stats": "^0.3.1"
+  }
+}
