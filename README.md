@@ -9,7 +9,7 @@ Template repository for [gh-lang-stats](https://github.com/vladaviedov/gh-lang-s
 3. Add a your personal access token as a repository secret named `ACCESS_KEY` [here](../../settings/secrets/actions) (link only works from README).
 4. Pick a template from the [source repo](https://github.com/vladaviedov/gh-lang-stats/tree/master/templates) and copy it to the repository.
 5. Rename the file to `template.svg`. *(TODO: settings)*
-6. Optional (for cron): Uncomment lines 5 and 6 in the [workflow](.github/workflow/generate.yml).
+6. Optional (for cron): Uncomment lines 5 and 6 in the [workflow](.github/workflows/generate.yml).
 
 ## Usage
 
