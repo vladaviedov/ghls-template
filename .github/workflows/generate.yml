@@ -2,8 +2,8 @@ name: Generate Images
 
 on:
   workflow_dispatch:
-# schedule:
-#   - cron: "0 0 * * *"
+  # schedule:
+  #   - cron: "0 0 * * *"
 
 jobs:
   run:
@@ -25,10 +25,13 @@ jobs:
       - name: Run Program
         run: npx gh-lang-stats
         env:
-          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+          TOKEN: ${{ secrets.TOKEN }}
+          # MAX_CONCUR: 5
+          # INPUT_FILE: "template.svg"
+          # OUTPUT_FILE: "generated.svg"
       - name: Commit & Push
         uses: Andro999b/push@v1.3
         with:
-          github_token: ${{ secrets.ACCESS_KEY }}
+          github_token: ${{ secrets.GITHUB_KEY }}
           message: "Generated Images"
           empty: true
