@@ -21,7 +21,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Packages
-        run: yarn install --immutable
+        run: yarn install
       - name: Run Program
         run: npx gh-lang-stats
         env:
@@ -32,6 +32,6 @@ jobs:
       - name: Commit & Push
         uses: Andro999b/push@v1.3
         with:
-          github_token: ${{ secrets.GITHUB_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           message: "Generated Images"
           empty: true
