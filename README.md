@@ -20,7 +20,3 @@ Two ways to run it
 	- The default setting is to run it at 00:00 once a day.
 
 The workflow will generate a file `generated.svg` (or specified by `OUTPUT_FILE`).
-
-## Known Issues
-
-- The job will take a long time if you have a lot of commits
