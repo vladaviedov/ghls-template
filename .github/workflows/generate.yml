@@ -21,7 +21,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Packages
-        run: yarn install
+        run: yarn install --immutable
       - name: Run Program
         run: npx gh-lang-stats
         env:
